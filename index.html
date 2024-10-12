@@ -1,0 +1,43 @@
+<!-- Created by Aslam Beg-->
+
+<!DOCTYPE html>  
+<html lang="en">  
+
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Colorful Animated Digital Clock</title>  
+    <link rel="stylesheet" href="style.css">
+</head>  
+
+<body>  
+    <div id="clockContainer">  
+        <div id="clock"></div>  
+        <div class="date" id="date"></div>  
+    </div>  
+
+    <div id="formContainer" class="animated-form">  
+        <h3>Settings</h3>  
+        <label for="timeFormat">Time Format:</label>  
+        <select id="timeFormat">  
+            <option value="24">24-Hour</option>  
+            <option value="12">12-Hour</option>  
+        </select>  
+
+        <label for="bgColor">Choose Background Color:</label>  
+        <input type="color" id="bgColor" value="#282c34">  
+
+        <label for="themeSelect">Select Theme:</label>  
+        <select class="theme-select" id="themeSelect" onchange="changeTheme()">  
+            <option value="default">Default</option>  
+            <option value="dark">Dark Theme</option>  
+            <option value="light">Light Theme</option>  
+            <option value="colorful">Colorful Theme</option>  
+        </select>  
+
+        <button onclick="applySettings()">Apply Settings</button>  
+    </div>  
+    <script src="script.js">  </script>  
+</body>  
+
+</html>
